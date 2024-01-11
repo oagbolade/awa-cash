@@ -1,0 +1,70 @@
+{
+  "Awacash Screen": {
+    "prefix": "awsc", //Screen With Container
+    "body": [
+      "import { StyleSheet, View } from 'react-native';",
+      "",
+      "import { Container } from 'components';",
+      "import {} from 'navigation';",
+      "",
+      "export default function ${TM_FILENAME_BASE}(): JSX.Element {",
+      "  return (",
+      "    <Container>",
+      "      <View style={styles.container} />",
+      "    </Container>",
+      "  );",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});",
+      ""
+    ]
+  },
+  "React 18 Functional Component": {
+    "prefix": "awacashComp",
+    "body": [
+      "import { StyleSheet, View } from 'react-native';",
+      "",
+      "export default function ${TM_FILENAME_BASE}(): JSX.Element {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <View $0/>",
+      "    </View>",
+      "  );",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});",
+      ""
+    ]
+  },
+  "React 18 Functional Component With Props": {
+    "prefix": "awacashPropComp",
+    "body": [
+      "import { StyleSheet, View } from 'react-native';",
+      "",
+      "interface Props {}",
+      "",
+      "export default function ${TM_FILENAME_BASE}({}: Props): JSX.Element | null {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <View $0/>",
+      "    </View>",
+      "  );",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});",
+      ""
+    ]
+  }
+}
